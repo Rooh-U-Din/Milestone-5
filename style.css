@@ -175,3 +175,83 @@ textarea{
         visibility: hidden;
     }
 }
+
+
+
+
+@media (max-width: 768px) {
+    #resume-display{
+        width: 400px;
+        position: absolute;
+        margin-left: 4%; 
+        margin-top: 140px;   
+        padding: 20px;
+        border: 2px solid gray;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        outline: none;
+    }
+    .app-title {
+        font-size: 1.8rem;
+    }
+
+    .app-subtitle {
+        font-size: 0.9rem;
+    }
+
+    #form {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .profilePicture {
+        width: 80px;
+        height: 80px;
+    }
+
+    textarea {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    #resume-display{
+        width: 400px;
+        position: absolute;
+        margin-left: 4%; 
+        margin-top: 140px;   
+        padding: 20px;
+        border: 2px solid gray;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        outline: none;
+    }
+    .app-title {
+        font-size: 1.5rem;
+    }
+
+    .app-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .profilePicture {
+        width: 60px;
+        height: 60px;
+    }
+
+    #resume-display {
+        width: 90%;
+    }
+
+    #create-button, #download-button, #generateLinkButton {
+        font-size: 14px;
+        height: 40px;
+    }
+}
+
+
+@media print {
+    body > :not(#resume-display) {
+        visibility: hidden;
+    }
+}
