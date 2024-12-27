@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-header">
+        <h1 class="app-title">Professional Resume Builder</h1>
+        <p class="app-subtitle">Create a stunning resume in minutes</p>
+    </div>
+
+    <form id="form">
+        <div class="form-section">
+        <fieldset>
+            <h3 class="h" ><i class="bx bxs-user icon" ></i>INORMATION</h3>
+            <label for="profilePicture">Profile Picture:</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+            <label for="username">User Name:</label>
+            <input type="text" id="username" placeholder="Enter Your User" required>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+            <label for="Email">Email:</label>
+            <input type="email" id="email" placeholder="Enter Your Email">
+            <label for="phone-number">Phone Number:</label>
+            <input type="number" id="number" placeholder="Enter Your Number">
+        </fieldset>
+    </div>
+    <div class="form-section">
+           <fieldset >
+            <h3 class="h"><i class='bx bxs-graduation icon'></i> EDUCATION</h3>
+            <label for="name">Education:</label>
+            <textarea type="text" id="education" placeholder="Enter Your Education" required></textarea>
+        </fieldset>
+    </div>
+    <div class="form-section">
+        <fieldset class="experience">
+            <h3 class="h"><i class='bx bxs-briefcase icon'></i>Experience</h3>
+            <label for="name">Experience:</label>
+            <textarea type="text" id="experience" placeholder="Enter Your Experience" rows="4"  required></textarea>
+        </fieldset>
+    </div>
+    <div class="form-section">
+        <fieldset class="skills">
+            <h3 class="h"><i class='bx bxs-cog icon'></i>SKILLS</h3>
+            <label for="skills">Skills:</label>
+            <textarea id="skills" placeholder="Enter Your Skills" rows="2"></textarea>
+        </fieldset>
+    </div>
+    
+
+    </div>
+        <button id="create-button" type="submit"><i class='bx bxs-paper-plane icon'></i>Generate Resume</button>
+    </form>
+    <!-- Dynamic And Editable Resume  -->
+    
+    <div id="resume-display" contenteditable="true">
+
+    </div>
+    
+    <button id="download-button"><i class='bx bxs-download'></i>  Download Resume</button>
+        
+    <br>
+    <h3>Generate Your Unique Link</h3>
+    <button id="generateLinkButton">Generate Link</button>
+
+    <input type="trext" id="ShareableLink" target="_blank" readonly >
+
+    <script src="script.js"></script>
+</body>
+</html>
