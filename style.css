@@ -133,6 +133,7 @@ textarea{
 }
 
 #generateLinkButton{
+    top: 50%;
     width:120px;
     height: 25px;
     font-size: 15px;
@@ -191,10 +192,9 @@ textarea{
 #resume-display {
 
 position: absolute;
-    left: 42%;
+    left: auto;
     width: 800px;
     padding: 20px;
-    margin-top: -1285px;
     background: white;
     border-radius: 10px;
     /* General Styles */
@@ -384,6 +384,7 @@ body {
     }
 
     #create-button, #download-button, #generateLinkButton {
+        position: absolute;
         font-size: 10px;
         height: 40px;
         width: 120px;
