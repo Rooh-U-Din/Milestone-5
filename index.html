@@ -38,6 +38,13 @@
         </fieldset>
     </div>
     <div class="form-section">
+        <fieldset >
+         <h3 class="h"><i class='bx bxs-graduation icon'></i> ABOUT</h3>
+         <label for="name">About:</label>
+         <textarea type="text" id="about" placeholder="Something About You" required></textarea>
+     </fieldset>
+ </div>
+    <div class="form-section">
         <fieldset class="experience">
             <h3 class="h"><i class='bx bxs-briefcase icon'></i>Experience</h3>
             <label for="name">Experience:</label>
@@ -48,7 +55,11 @@
         <fieldset class="skills">
             <h3 class="h"><i class='bx bxs-cog icon'></i>SKILLS</h3>
             <label for="skills">Skills:</label>
-            <textarea id="skills" placeholder="Enter Your Skills" rows="2"></textarea>
+            <ul id="skills-list">
+                <!-- Skills will be dynamically added here -->
+            </ul>
+            <input type="text" id="skill-input" placeholder="Enter a skill">
+            <button type="button" id="add-skill-btn">Add Skill</button>
         </fieldset>
     </div>
     
@@ -68,8 +79,11 @@
     <h3>Generate Your Unique Link</h3>
     <button id="generateLinkButton">Generate Link</button>
 
-    <input type="trext" id="ShareableLink" target="_blank" readonly >
+    <input type="text" id="ShareableLink" target="_blank" readonly >
 
     <script src="script.js"></script>
+
+
+
 </body>
 </html>
